@@ -1,0 +1,180 @@
+.container{
+    text-align: center;
+    position: relative;
+
+}
+.music-controls {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+}
+
+.music-controls button {
+    background: #ffe819;
+    color: #000;
+    border: none;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.music-controls button:hover {
+    background: #2ed5ff;
+    color: white;
+}
+
+.title{
+margin-top:50px ;
+color: white;
+font-size: 60px;
+justify-content: center;
+align-items: center;
+
+}
+.title span{
+    color: #26ffcb;
+    padding-left:15px ;
+}
+.reset{
+    width: 250px;
+    height: 100px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+   background: #FF4E50;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #F9D423, #FF4E50);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F9D423, #FF4E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-size: 26px;
+    font-weight:600;
+    color: #ffffff;
+    cursor: pointer;
+    margin-top:25px;
+    margin-bottom:25px;
+}
+.reset:hover{
+background: #f857a6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ff5858, #f857a6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ff5858, #f857a6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.back{
+    width: 250px;
+    height: 100px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+   background: #00d2d3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #54a0ff, #00d2d3);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #54a0ff, #00d2d3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-size: 26px;
+    font-weight:600;
+    color: #ffffff;
+    cursor: pointer;
+    margin-top:25px;
+    margin-bottom:25px;
+    margin-left: 20px;
+}
+.back:hover{
+background: #667eea;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #764ba2, #667eea);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #764ba2, #667eea); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.boxes{
+    display: flex;
+    height: 180px;
+    width: 180px;
+  background: rgba(31, 53, 64, 0.2); /* 👈 transparent */
+  border: 2px solid rgba(255, 220, 24, 0.966);
+    border-radius: 12px;
+    cursor: pointer;
+
+}
+.board{
+    height: 600px;
+    width: 564px;
+    display: flex;
+    margin: auto;
+
+}
+.boxes img{
+    margin: 50px 50px;
+}
+.players-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 30px 0;
+}
+
+/* Individual player display */
+.player-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Player name styling */
+.player-name {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+/* First player (X) color */
+.player-info:nth-child(1) .player-name {
+    color: #00ff00;
+}
+
+/* Second player (O) color */
+.player-info:nth-child(3) .player-name {
+    color: #ff4444;
+}
+
+/* Player icon size */
+.player-icon-small {
+    width: 45px;
+    height: 45px;
+}
+
+/* VS text in between */
+.vs {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffe819;
+    margin: 0 20px;
+    text-shadow: 0 0 10px rgba(255, 232, 25, 0.7);
+}
+
+/* Current player turn display */
+.current-player {
+    margin: 20px 0;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.current-player h2 {
+    font-size: 24px;
+    color: white;
+    margin: 0;
+}
+
+.current-player span {
+    color: #ffe819;
+    font-weight: bold;
+}
+
+/* For the title when showing winner */
+.title strong {
+    color: inherit;
+}
